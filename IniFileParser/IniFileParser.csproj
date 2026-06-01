@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>IniParser</RootNamespace>
+    <AssemblyName>IniParser</AssemblyName>
+    <TargetFramework>net10.0</TargetFramework>
+    <Version>2.6.2</Version>
+    <AssemblyVersion>2.6.2.0</AssemblyVersion>
+    <FileVersion>2.6.2.0</FileVersion>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>Properties\publickey.snk</AssemblyOriginatorKeyFile>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Description><![CDATA[Alternate maintainer of "ini-parser".
+
+A .NET, Mono and Unity3d compatible(*) library for reading/writing INI data from IO streams, file streams, and strings written in C#.
+
+Also implements merging operations, both for complete ini files, sections, or even just a subset of the keys contained by the files.
+
+(*) This library is 100% .NET code and does not have any dependencies on Windows API calls in order to be portable.
+]]></Description>
+    <Authors>Ricardo Amores Hernández, SandRock</Authors>
+    <Company>SandRock</Company>
+    <Product>INI Parser</Product>
+    <Copyright>Ricardo Amores Hernández 2009-2019</Copyright>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <NoWarn>$(NoWarn);0618;1591;1573</NoWarn><!-- Ignore: Use of Deprecated, Undocumented Public Members, Undocumented Parameters -->
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="">
+      <Link>README.md</Link>
+    </None>
+  </ItemGroup>
+</Project>
